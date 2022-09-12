@@ -1,0 +1,29 @@
+{{/* layouts/taxonomy/list.html */}}
+
+{{ partial "header.html" . }}
+
+
+  <h1>#{{ .Title | lower }}</h1>
+  <ul class="list">
+    {{ range .Pages }}
+      <li>
+        
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <div class="meta">
+        <time>{{ .Date.Format (.Site.Params.dateFormat | default "01·02·2006" ) }}</time>
+
+        <span>— 
+            {{ $terms := (.GetTerms "tags") }}
+              {{ range $key, $value := $terms }}
+                  <a href="{{ .Permalink }}">
+                    #{{ .Title | lower }}{{ if ne $key (sub (len $terms) 1) }}, {{ end }}
+                  </a>
+              {{ end }}
+            </span>
+            </div>
+      </li>
+    {{ end }}
+  </ul>
+
+
+{{ partial "footer.html" . }}

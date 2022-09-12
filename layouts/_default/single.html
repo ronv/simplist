@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+{{ .Content | replaceRE "(<h[1-6]\\sid=\"([^\"]+)\"\\s?>)(.+)(</h[1-6]+>)" "${1}${3} <a href=\"#${2}\">#</a>${4}" | safeHTML }}
+
+
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div>
+  <h3>
+    See also
+  </h3>
+  <ul>
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }} </a></li>
+      {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ partial "footer.html" . }}

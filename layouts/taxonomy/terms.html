@@ -1,0 +1,14 @@
+{{/* layouts/taxonomy/terms.html */}}
+
+{{ partial "header.html" . }}
+
+  <h1>Tags</h1>
+  <ul class="list">
+    {{ range .Data.Terms.Alphabetical }}
+      <li>
+          <a href="{{ .Page.Permalink }}">({{ .Count }}) {{ .Page.Title | lower }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+{{ partial "footer.html" . }}

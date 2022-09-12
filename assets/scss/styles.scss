@@ -1,0 +1,66 @@
+* {
+    font-size: 18px;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+  helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+  sans-serif; 
+  padding: 2rem; 
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+main { 
+    max-width: 70ch 
+}
+header, footer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+h1:first-child {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+.meta {
+	color: #777;	
+}
+.meta span a {
+	color: #777;
+	display: inline;
+	text-decoration: none;
+}
+pre, code {
+  background: #eee;
+}
+pre {
+  margin-bottom: 2rem;
+}
+pre code {
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+}
+a, a:visited { 
+    color: initial 
+}
+.list { 
+    list-style-type: none; 
+    padding-left: 0;
+	margin: 0;
+}
+.list li {
+	margin-bottom: 0.5rem;
+}
+time { 
+    color: #777;
+    font-variant-numeric: tabular-nums;
+}
+blockquote {
+    border-left: 2px solid #777;
+    padding: .5rem 1rem;
+    margin: 2rem 0
+}

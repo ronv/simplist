@@ -1,0 +1,8 @@
+<svg width="100%" height="100%" viewBox="0 0 504 504" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;fill:currentColor;">
+    <g transform="matrix(1,0,0,1,-98,-28)">
+        <g>
+            <path d="M350,28C211.05,28 98,141.05 98,280C98,418.95 211.05,532 350,532C488.95,532 602,418.95 602,280C602,141.05 488.95,28 350,28ZM350,464.8C248.1,464.8 165.2,381.898 165.2,280C165.2,178.102 248.102,95.2 350,95.2C451.898,95.2 534.8,178.102 534.8,280C534.8,381.898 451.898,464.8 350,464.8Z" style="fill-rule:nonzero;fill:currentColor"/>
+            <path d="M350,162.4C285.152,162.4 232.4,215.154 232.4,280C232.4,344.846 285.154,397.6 350,397.6C414.846,397.6 467.6,344.846 467.6,280C467.6,215.154 414.846,162.4 350,162.4ZM350,330.4C322.211,330.4 299.602,307.787 299.602,280.002C299.602,252.213 322.215,229.604 350,229.604C377.789,229.604 400.398,252.217 400.398,280.002C400.398,307.791 377.789,330.4 350,330.4Z" style="fill-rule:nonzero;fill:currentColor"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+{{ .Content }}
+
+<ul class="list">
+{{ range (where .Site.RegularPages "Type" "in" (slice "writing")).GroupByDate "2006" }}
+
+  {{ range .Pages }}
+  
+  <li>
+    
+    <a href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+   <div class="meta">
+    <time>{{ .Date.Format (.Site.Params.dateFormat | default "02·01·2006" ) }}</time>
+      
+    <span>— 
+      {{ $terms := (.GetTerms "tags") }}
+        {{ range $key, $value := $terms }}
+            <a href="{{ .Permalink }}">
+              #{{ .Title | lower }}{{ if ne $key (sub (len $terms) 1) }}, {{ end }}
+            </a>
+        {{ end }}
+      </span>
+   </div>
+  </li>
+
+  {{- end -}}
+
+{{ end }}
+</ul>
+
+{{ partial "footer.html" . }}
